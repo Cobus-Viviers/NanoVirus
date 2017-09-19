@@ -1,0 +1,6 @@
+D:\My_Projects\DVT\NanoVirus\NanoVirus\bin\Debug\NanoVirus.exe.config
+D:\My_Projects\DVT\NanoVirus\NanoVirus\bin\Debug\NanoVirus.exe
+D:\My_Projects\DVT\NanoVirus\NanoVirus\bin\Debug\NanoVirus.pdb
+D:\My_Projects\DVT\NanoVirus\NanoVirus\obj\Debug\NanoVirus.csprojResolveAssemblyReference.cache
+D:\My_Projects\DVT\NanoVirus\NanoVirus\obj\Debug\NanoVirus.exe
+D:\My_Projects\DVT\NanoVirus\NanoVirus\obj\Debug\NanoVirus.pdb
