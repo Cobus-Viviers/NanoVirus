@@ -66,7 +66,7 @@ namespace NanoVirus
         }
         public override int GetHashCode()
         {
-            return x | y | z | (int)type;
+            return 37*(x | y | z) ;
         }
 
         private void OnTurnEndEventHandler(EventArgs e)

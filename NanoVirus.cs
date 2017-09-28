@@ -36,6 +36,7 @@ namespace NanoVirus
                 MustMove = true;
             }
         }
+        
 
     }
 }

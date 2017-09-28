@@ -1,100 +1,115 @@
 ==================Round1==================
-Redblood Cells: 61
-Whiteblood Cells: 30
-Tumor Cells: 9
+Redblood Cells: 74
+Whiteblood Cells: 20
+Tumor Cells: 6
 Destroyed: 0
 ==================Round2==================
-Redblood Cells: 61
-Whiteblood Cells: 30
-Tumor Cells: 9
+Redblood Cells: 74
+Whiteblood Cells: 20
+Tumor Cells: 6
 Destroyed: 0
 ==================Round3==================
-Redblood Cells: 61
-Whiteblood Cells: 30
-Tumor Cells: 9
+Redblood Cells: 74
+Whiteblood Cells: 20
+Tumor Cells: 6
 Destroyed: 0
 ==================Round4==================
-Redblood Cells: 61
-Whiteblood Cells: 30
-Tumor Cells: 9
+Redblood Cells: 74
+Whiteblood Cells: 20
+Tumor Cells: 6
 Destroyed: 0
 ==================Round5==================
-Redblood Cells: 52
-Whiteblood Cells: 30
-Tumor Cells: 18
+Redblood Cells: 68
+Whiteblood Cells: 20
+Tumor Cells: 12
 Destroyed: 0
 ==================Round6==================
-Redblood Cells: 52
-Whiteblood Cells: 30
-Tumor Cells: 17
+Redblood Cells: 68
+Whiteblood Cells: 20
+Tumor Cells: 11
 Destroyed: 1
 ==================Round7==================
-Redblood Cells: 52
-Whiteblood Cells: 30
-Tumor Cells: 17
+Redblood Cells: 68
+Whiteblood Cells: 20
+Tumor Cells: 11
 Destroyed: 1
 ==================Round8==================
-Redblood Cells: 52
-Whiteblood Cells: 30
-Tumor Cells: 17
+Redblood Cells: 68
+Whiteblood Cells: 20
+Tumor Cells: 11
 Destroyed: 1
 ==================Round9==================
-Redblood Cells: 49
-Whiteblood Cells: 30
-Tumor Cells: 19
-Destroyed: 2
+Redblood Cells: 63
+Whiteblood Cells: 20
+Tumor Cells: 16
+Destroyed: 1
 ==================Round10==================
-Redblood Cells: 34
-Whiteblood Cells: 30
-Tumor Cells: 34
-Destroyed: 2
+Redblood Cells: 56
+Whiteblood Cells: 20
+Tumor Cells: 23
+Destroyed: 1
 ==================Round11==================
-Redblood Cells: 34
-Whiteblood Cells: 30
-Tumor Cells: 34
-Destroyed: 2
+Redblood Cells: 56
+Whiteblood Cells: 20
+Tumor Cells: 23
+Destroyed: 1
 ==================Round12==================
-Redblood Cells: 34
-Whiteblood Cells: 30
-Tumor Cells: 34
-Destroyed: 2
+Redblood Cells: 56
+Whiteblood Cells: 20
+Tumor Cells: 23
+Destroyed: 1
 ==================Round13==================
-Redblood Cells: 32
-Whiteblood Cells: 30
-Tumor Cells: 36
+Redblood Cells: 54
+Whiteblood Cells: 20
+Tumor Cells: 24
 Destroyed: 2
 ==================Round14==================
-Redblood Cells: 19
-Whiteblood Cells: 30
-Tumor Cells: 48
-Destroyed: 3
+Redblood Cells: 41
+Whiteblood Cells: 20
+Tumor Cells: 37
+Destroyed: 2
 ==================Round15==================
-Redblood Cells: 0
-Whiteblood Cells: 28
-Tumor Cells: 69
+Redblood Cells: 32
+Whiteblood Cells: 20
+Tumor Cells: 45
 Destroyed: 3
 ==================Round16==================
-Redblood Cells: 0
-Whiteblood Cells: 28
-Tumor Cells: 68
-Destroyed: 4
+Redblood Cells: 32
+Whiteblood Cells: 20
+Tumor Cells: 45
+Destroyed: 3
 ==================Round17==================
-Redblood Cells: 0
-Whiteblood Cells: 27
-Tumor Cells: 69
+Redblood Cells: 30
+Whiteblood Cells: 20
+Tumor Cells: 46
 Destroyed: 4
 ==================Round18==================
-Redblood Cells: 0
-Whiteblood Cells: 19
-Tumor Cells: 77
+Redblood Cells: 23
+Whiteblood Cells: 20
+Tumor Cells: 53
 Destroyed: 4
 ==================Round19==================
 Redblood Cells: 0
-Whiteblood Cells: 0
-Tumor Cells: 95
+Whiteblood Cells: 18
+Tumor Cells: 77
 Destroyed: 5
 ==================Round20==================
 Redblood Cells: 0
-Whiteblood Cells: 0
-Tumor Cells: 95
+Whiteblood Cells: 4
+Tumor Cells: 91
 Destroyed: 5
+==================Round21==================
+Redblood Cells: 0
+Whiteblood Cells: 3
+Tumor Cells: 91
+Destroyed: 6
+==================Round22==================
+Redblood Cells: 0
+Whiteblood Cells: 0
+Tumor Cells: 94
+Destroyed: 6
+==================Round23==================
+Redblood Cells: 0
+Whiteblood Cells: 0
+Tumor Cells: 94
+Destroyed: 6

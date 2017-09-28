@@ -9,8 +9,9 @@ namespace NanoVirus
 {
     class TextWriter
     {
-        private string FilePath;
-        StreamWriter Writer;
+        private string filePath;
+        private StreamWriter writer;
+        object fileWriterLock;
 
         public TextWriter(string FilePath)
         {
@@ -23,20 +24,22 @@ namespace NanoVirus
             if (File.Exists(FilePath))
                 File.WriteAllText(FilePath, "");
 
-            this.FilePath = FilePath;
+            filePath = FilePath;
+
+            fileWriterLock = new object(); 
         }
 
         public void WriteToFile(string line)
         {
-            lock (this)
+            lock (fileWriterLock)
             {
                 try
                 {
-                    using(Writer = new StreamWriter(FilePath, true))
+                    using(writer = new StreamWriter(filePath, true))
                     {
-                        Writer.WriteLine(line);
+                        writer.WriteLine(line);
                     }
-                    Writer.Close();
+                    writer.Close();
                 }
                 catch (IOException e)
                 {

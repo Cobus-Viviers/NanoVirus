@@ -13,10 +13,10 @@ namespace NanoVirus
         private const int NUMBER_OF_CELLS = 100;
         private static Random rng;
 
-        static List<Cell> RedBloodCells;
-        static List<Cell> WhiteBloodCells;
-        static List<Cell> TumorousCells;
-        private static int DestroyedCellCount;
+        static HashSet<Cell> RedBloodCells;
+        static HashSet<Cell> WhiteBloodCells;
+        static HashSet<Cell> TumorousCells;
+        private static int destroyedCellCount;
 
         public static NanoVirus Virus;
 
@@ -29,9 +29,9 @@ namespace NanoVirus
 
         static GameManager()
         {
-            RedBloodCells = new List<Cell>();
-            WhiteBloodCells = new List<Cell>();
-            TumorousCells = new List<Cell>();
+            RedBloodCells = new HashSet<Cell>();
+            WhiteBloodCells = new HashSet<Cell>();
+            TumorousCells = new HashSet<Cell>();
             rng = new Random();
         }
 
@@ -40,6 +40,11 @@ namespace NanoVirus
             for (int i = 0; i < NUMBER_OF_CELLS; i++)
             {
                 Cell cell = new Cell();
+                if(RedBloodCells.Contains(cell) || WhiteBloodCells.Contains(cell) || TumorousCells.Contains(cell))
+                {
+                    i--;
+                    continue;
+                }
                 switch (cell.Type)
                 {
                     case Cell.CellType.Red: RedBloodCells.Add(cell);
@@ -50,14 +55,14 @@ namespace NanoVirus
                         break;
                 }
             }
-            Virus = new NanoVirus(RedBloodCells[rng.Next(RedBloodCells.Count)]);
-            DestroyedCellCount = 0;
+            Virus = new NanoVirus(RedBloodCells.ElementAt(rng.Next(RedBloodCells.Count)));
+            destroyedCellCount = 0;
             PlayGame();
         }
         
-        private static Cell FindClosest(List<Cell> CellList, Cell SourceCell)
+        private static Cell FindClosest(ICollection<Cell> CellList, Cell SourceCell)
         {
-                Cell target = CellList[0];
+                Cell target = CellList.ElementAt(0);
                 double minDistance = DistanceCalculator.CalculateDistance(target, SourceCell);
                 foreach (Cell cell in CellList)
                 {
@@ -96,7 +101,7 @@ namespace NanoVirus
             if (tumorCell.Type != Cell.CellType.Tumorous)
                 return;
             TumorousCells.Remove(tumorCell);
-            DestroyedCellCount++;
+            destroyedCellCount++;
         }
 
         public static Cell GetNanoVirusTarget()
@@ -104,21 +109,21 @@ namespace NanoVirus
             if (WhiteBloodCells.Count == 0 && RedBloodCells.Count == 0)
                 return null;
 
-            int CellNumber = rng.Next(NUMBER_OF_CELLS - DestroyedCellCount);
+            int CellNumber = rng.Next(NUMBER_OF_CELLS - destroyedCellCount);
             Cell cell = null;
 
             if (CellNumber < RedBloodCells.Count)
             {
-                cell = RedBloodCells[CellNumber];
+                cell = RedBloodCells.ElementAt(CellNumber);
             }
             else if(CellNumber < WhiteBloodCells.Count + RedBloodCells.Count)
             {
-                cell = WhiteBloodCells[CellNumber - RedBloodCells.Count];
+                cell = WhiteBloodCells.ElementAt(CellNumber - RedBloodCells.Count);
             }
             else
             {
                 CellNumber = CellNumber - WhiteBloodCells.Count - RedBloodCells.Count;
-                cell = TumorousCells[CellNumber];
+                cell = TumorousCells.ElementAt(CellNumber);
             }
 
             if (DistanceCalculator.CalculateDistance(Virus.CurrentCell, cell) > 5000)
